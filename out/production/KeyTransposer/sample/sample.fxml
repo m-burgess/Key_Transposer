@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="originalKeyTextfield" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <Button fx:id="submitButton" onMouseClicked="#convertKey" prefHeight="18.0" prefWidth="169.0" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Label text="+1 half step" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <Label text="+2 half steps" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <Label text="+3 half steps" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+        <Label text="-1 half step" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Label layoutX="178.0" layoutY="118.0" text="-2 half steps" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+        <Label layoutX="178.0" layoutY="40.0" text="-3 half steps" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+        <Label fx:id="transposedKeyPlus3Label" text="Transposed Key +3" GridPane.halignment="CENTER" />
+        <Label fx:id="transposedKeyPlus2Label" layoutX="10.0" layoutY="40.0" text="Transposed Key +2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <Label fx:id="transposedKeyPlus1Label" layoutX="10.0" layoutY="118.0" text="Transposed Key +1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <Label fx:id="transposedKeyMinus1Label" text="Transposed Key -1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Label fx:id="transposedKeyMinus2Label" text="Transposed Key -2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+        <Label fx:id="transposedKeyMinus3Label" text="Transposed Key -3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+    </children>
+</GridPane>
